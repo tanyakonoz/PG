@@ -1,0 +1,32 @@
+.footer
+    background: $color-blue-dark
+    grid-columns: 1 / -1
+    padding: 8rem 0
+
+.logos
+    display: block
+    margin-bottom: 8rem         //отодвигаю логотип от footer//
+    &__img
+        display: block
+        margin: 0 auto      //центрирую лого//
+
+.nav
+    &__list
+        list-style-type: none       //убираю точки слева//
+        display: grid
+        grid-template-columns: repeat(auto-fit,minmax(15rem, 1fr))
+        justify-items: center     //виравниваю элементы по центру//
+        grid-gap: 2.5rem
+    &__link
+        &:link, &:visited
+            font-size: 2rem
+            font-weight: 400
+            text-transform: uppercase
+            color: $color-gray-light
+            text-decoration: none
+            text-align: center
+            transition: .3 all
+            display: inline-block       //чтоб двигались link//
+        &:hover, &:active
+            color: $color-green-light
+            transform: translateY(-.3rem)

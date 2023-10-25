@@ -1,0 +1,37 @@
+//Цвет текста
+$color-green-dark: #272922
+$color-green-light: #61A568
+
+$color-blue-dark: #344D62
+$color-red-dark: #DE2626
+
+$color-gray-dark: #AAAAAA
+$color-gray-light: #F5F5F5
+
+
+//Тень для кнопок
+//$box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.3))
+//$shadow-h2: 0rem .4rem .4rem rgba($color-black, .25)
+
+//Отступы
+//$margin-vertical-big: 8rem
+//$grid-width: 114rem
+//$gutter-horizontal: 6rem
+
+//миксин для адаптивного дизайна
+@mixin respond($breakpoint)
+    @if $breakpoint == phone 
+        @media only screen and (max-width: 420px)
+            @content
+
+    @if $breakpoint == tab-port
+        @media only screen and (max-width: 830px)
+            @content
+    
+    @if $breakpoint == tab-land
+        @media only screen and (max-width: 1170px)
+            @content
+
+    @if $breakpoint == big-screen
+        @media only screen and (min-width: 1800px)
+            @content

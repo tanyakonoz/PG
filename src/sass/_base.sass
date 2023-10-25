@@ -1,0 +1,23 @@
+
+*, ::after, ::before
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html
+    font-size: 62.5%    //1rem=10px//
+
+body
+    font-family: "Roboto", sans-serif
+    font-weight: 400
+    color: $color-gray-light
+    line-height: 113%   //величинa пространства между строками//
+    font-size: 1.6rem
+
+.container
+    display: grid
+    grid-template-rows: min-content 40vw min-content min-content repeat(3, min-content)
+    grid-template-columns: 1fr repeat(8,minmax(min-content, 14rem)) 1fr
+
+    
+

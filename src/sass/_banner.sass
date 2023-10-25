@@ -1,0 +1,34 @@
+.banner
+    &-img
+        grid-column: 4 / -1
+        background: url(../img/background.jpg) center / cover no-repeat
+        border-bottom: solid .2rem $color-red-dark      //рамка внизу меню//
+        display: grid
+        grid-template-columns: repeat(16, 1fr)
+        grid-template-rows: repeat(20, 1fr)
+        &__img-1
+            width: 100%
+            grid-column: 3 / 11
+            grid-row: 7 / 3
+        &__img-2
+            width: 100%
+            grid-column: 7 / 15
+            grid-row: 8 / 20
+           
+    &-text
+        background: rgb(52,98,83)
+        background: linear-gradient(125deg, rgba(52,98,83,1) 17%, rgba(43,76,66,1) 34%, rgba(39,68,59,1) 52%, rgba(20,24,25,1) 88%)
+        grid-column: 1 / span 3
+        border-bottom: solid .2rem $color-red-dark      //рамка внизу меню//
+        padding: 4rem
+        //display: flex
+        //flex-direction: column
+        //justify-content: center
+        //align-items: flex-start
+        display: grid
+        grid-template-columns: repeat(1, 1fr)
+        align-content: center
+        justify-items: start        //что б не растягивались елементы//
+        &__text
+            margin-bottom: 4rem
+            line-height: 170%
